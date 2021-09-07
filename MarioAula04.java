@@ -16,17 +16,21 @@ public class MarioAula04 {
 		this.nome = nome;
 		this.idade = idade;
 		this.altura = altura;
+		this.estamina = 100;
 	}
 
-
-	private String  nome;
-	private String olhos;
-	private String nariz;
+	private String  nome;	
 	private int idade;
 	private double altura;
+	private int estamina = 100;
+	
+	//caracteristicas
+	private String olhos ="Azuis brilhantes";
+	private String nariz = "Grande";	
+	
+	//superpoderes
 	private boolean invencivel;
 	private boolean voando;
-	private int estamina;
 	
 	public String getNome() {
 		return nome;
@@ -93,7 +97,36 @@ public class MarioAula04 {
 	
 	public void status() {
 		
-		System.out.println("Nome: " + this.nome + " , " + this.idade + " , " + this.invencivel + " , " + this.altura + " , " + this.estamina + " , " + this.nariz + " , " + this.olhos);
+		System.out.println("Nome: " + this.nome + " , idade: " + this.idade + " , invencibilidade ativa: " + this.invencivel + " , altura: " + this.altura + " , estamina: " + this.estamina + " , nariz: " + this.nariz + " , olhos: " + this.olhos);
 	}
+	
+	public void perdeEstamina() {
+		
+		this.estamina -= 10;
+		
+		if(this.estamina <= 0) {
+			
+			this.estamina = 0;			
+			
+		}
+	}
+	
+	public void ganhaEstamina() {
+		
+		this.estamina += 5;
+		
+		if(this.estamina >= 100) {
+			
+			this.estamina = 100;			
+			
+		}
+	}
+	
+	public void crescer() {
+		
+		this.altura *= 2;		
+		
+	}
+	
 }
  
