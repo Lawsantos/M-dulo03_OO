@@ -2,11 +2,11 @@
 
 public class Personagem {	
 	
-	private String  nome;	
+	public String  nome;	
 	private int idade;
 	private double altura;
 	private int estamina = 100;
-	private int coinsColected = 0;
+	public int coinsColected = 0;
 	private int life = 1;
 	
 	public Personagem(String nome, int idade, double altura) {
@@ -86,7 +86,7 @@ public class Personagem {
 	
 	public void statusLive() {
 		
-		System.out.println("Total de vidas: " + this.life + "\nTotal de moedas coletadas: " + this.coinsColected + "\n");
+		System.out.println("Total de vidas do " + this.nome + ": " + this.life + "\nTotal de moedas coletadas: " + this.coinsColected + "\n");
 	}	
 	
 	public void perdeEstamina() {
