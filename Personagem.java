@@ -1,12 +1,12 @@
 
 
-public class Personagem {	
+public abstract class Personagem {	
 	
-	public String  nome;	
+	private String  nome;	
 	private int idade;
 	private double altura;
 	private int estamina = 100;
-	public int coinsColected = 0;
+	private int coinsColected = 0;
 	private int life = 1;
 	
 	public Personagem(String nome, int idade, double altura) {
@@ -27,7 +27,8 @@ public class Personagem {
 	private boolean invencivel;
 	private boolean voando;	
 	
-	//Métodos
+	// Métodos   saltar()  revigorar()   morrer()   coletaCoins()   satatus()   statusLive()  
+	// perdeEstamina()  ganhaEstamina()  crescer()   poderesUsar()
 	
 	public void saltar() {		
 		
