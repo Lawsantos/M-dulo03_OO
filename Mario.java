@@ -6,21 +6,21 @@ public class Mario extends Personagem{
 		
 	}
 
-	int yoshi = 0;
+	private Yoshi = yoshi;
 	
-	public void montarNoYoshi(int yoshi) {
+	public void (Yoshi yoshi) {
 		
-		this.yoshi = 1;
+		this.yoshi = yoshi;
 	}
 	
 	public void montado() {
 		
-		if(this.yoshi > 0) {
+		if(this.yoshi != null) {
 			
-			System.out.println("Mario est· montado no Yoshi!");
+			System.out.println("Mario est√° montado no Yoshi!");
 		}else {
 			
-			System.out.println("Mario n„o est· montado no Yoshi!");
+			System.out.println("Mario n√£o est√° montado no Yoshi!");
 		}
 	}	
 	
