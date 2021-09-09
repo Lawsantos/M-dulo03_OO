@@ -4,7 +4,7 @@ public abstract class Personagem {
 	
 	private String  nome;	
 	private int idade;
-	private double altura;
+	double altura;
 	private int estamina = 100;
 	private int coinsColected = 0;
 	private int life = 1;
@@ -27,24 +27,32 @@ public abstract class Personagem {
 	private boolean invencivel;
 	private boolean voando;	
 	
+	
+	
 	// Métodos   saltar()  revigorar()   morrer()   coletaCoins()   satatus()   statusLive()  
 	// perdeEstamina()  ganhaEstamina()  crescer()   poderesUsar()
 	
+	public double getAltura() {
+		return altura;
+	}
+	
+
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+
+
 	public void saltar() {		
 		
-		switch (this.nome) {
+		System.out.println(this.nome + " esta pulando 50% da sua altura!");
 		
-		case "Mario" :			
-			
-			System.out.println("Altura do pulo: " + this.altura * 0.5);
-		
-		case "Luigi":			
-			
-			System.out.println("Altura do pulo: " + this.altura * 2);
-			
-		}
-		
-	}		
+	}
+	
+	public void saltar(double alturaObjeto) {
+		double altura = alturaObjeto;
+		altura *= 1.5;
+		System.out.println(this.nome + " pulou um objeto com " + alturaObjeto + " de altura.Seu pulo atingiu " + altura + " de altura.");
+	}
 	
 	public void revigorar() {
 		
@@ -112,11 +120,7 @@ public abstract class Personagem {
 		}
 	}
 	
-	public void crescer() {
-		
-		this.altura *= 2;		
-		
-	}
+	public abstract void crescer();
 	
 	public void poderesUsar() {
 		

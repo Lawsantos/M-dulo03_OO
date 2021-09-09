@@ -21,8 +21,14 @@ public class Yoshi extends Personagem{
 		if (this.quantFrutasComidas % 2 == 0) {
 			
 			this.velocidade *= 2;
+			System.out.println(this.velocidade);
 		}
 		
+	}
+	
+	@Override
+	public void crescer() {
+		this.altura *= 1.1;
 	}
 
 }

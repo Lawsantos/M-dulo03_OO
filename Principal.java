@@ -18,6 +18,10 @@ public class Principal {
 		jogador1.montado();
 		jogador2.voar();
 		jogador3.status();
+		jogador3.saltar();
+		jogador2.crescer();
+		System.out.println(jogador2.getAltura());
+		jogador3.saltar(1.5);
 	}
 
 }

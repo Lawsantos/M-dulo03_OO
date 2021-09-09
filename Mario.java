@@ -22,5 +22,10 @@ public class Mario extends Personagem{
 			
 			System.out.println("Mario não está montado no Yoshi!");
 		}
+	}	
+	
+	@Override
+	public void crescer() {
+		this.altura *= 1.5;
 	}
 }
