@@ -14,7 +14,7 @@ public class Principal {
 		System.out.println(jogador3.getVelocidade());
 		System.out.println(jogador3.quantFrutasComidas);
 		jogador1.montado();
-		jogador1.montarNoYoshi(2);
+		jogador1.montarNoYoshi(jogador3);
 		jogador1.montado();
 		jogador2.voar();
 		jogador3.status();
